@@ -43,3 +43,7 @@ This component displays a list of files which can be downloaded. It should be ab
 
 ]
 ![image001](https://user-images.githubusercontent.com/57401673/174489951-e2227ec7-fa10-45ff-9f3c-3627056b8ca5.png)
+
+<!-- https://www.techiedelight.com/implement-select-all-check-box-html-javascript/ -->
+
+<!-- https://stackoverflow.com/questions/61824214/how-can-i-customize-the-style-of-a-checkbox-which-is-in-indeterminate-state -->

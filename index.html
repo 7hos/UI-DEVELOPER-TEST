@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI_Developer_Test</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <!----------- Create Table --------------->
+        <table class="entire-table" id="entire-table">
+            <thead>
+                <tr class="table-row">
+                    <th class="table-head">
+                        <input type="checkbox" id="select-all" onclick="selectAll(this)" />
+                    </th>
+                    <th class="visuallyhidden" id="selected">None Selected</th>
+                    <th class="table-head" id="download-selected" colspan="4" onclick="downloadAvailable()"><svg
+                            stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 30 10"
+                            height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path>
+                        </svg>Download Selected</th>
+                </tr>
+            </thead>
+            <tbody id="table-elements">
+                <!-- Start Field Header -->
+                <tr class="table-data-field-header">
+                    <td class="table-data"></td>
+                    <td class="table-data">Name</td>
+                    <td class="table-data">Device</td>
+                    <td class="table-data">Path</td>
+                    <td class="table-data dot"></td>
+                    <td class="table-data">Status</td>
+                </tr>
+                <!-- End Field Header -->
+                <!-- Row 1 -->
+                <tr class="table-row">
+                    <td class="table-data">
+                        <input class="checkbox" id="check-1" name="smss" type="checkbox"
+                            onclick="changeSelectedAllStatus();changeColorRowOnSelected(this) " />
+                    </td>
+                    <td class="table-data">smss.exe</td>
+                    <td class="table-data">Stark</td>
+                    <td class="table-data">\Device\HarddiskVolume2\Windows\System32\smss.exe</td>
+                    <td class="table-data dot"></td>
+                    <td class="table-data" name="status">Scheduled</td>
+                </tr>
+                <!-- End Row 1 -->
+                <!-- Row 2 -->
+                <tr class="table-row">
+                    <td class="table-data">
+                        <input class="checkbox" id="check-2" name="netsh" type="checkbox"
+                            onclick="changeSelectedAllStatus();changeColorRowOnSelected(this) " />
+                    </td>
+                    <td class="table-data">netsh.exe</td>
+                    <td class="table-data">Targaryen</td>
+                    <td class="table-data">\Device\HarddiskVolume2\Windows\System32\netsh.exe</td>
+                    <td class="table-data dot">🟢</td>
+                    <td class="table-data" name="status">Available</td>
+                </tr>
+                <!-- End Row 2 -->
+                <!-- Row 3 -->
+                <tr class="table-row">
+                    <td class="table-data">
+                        <input class="checkbox" id="check-3" name="uxtheme" type="checkbox"
+                            onclick="changeSelectedAllStatus();changeColorRowOnSelected(this) " />
+                    </td>
+                    <td class="table-data">uxtheme.dll</td>
+                    <td class="table-data">Lannister</td>
+                    <td class="table-data">\Device\HarddiskVolume1\Windows\System32\uxtheme.dll</td>
+                    <td class="table-data dot">🟢</td>
+                    <td class="table-data" name="status">Available</td>
+                </tr>
+                <!-- End Row 3 -->
+                <!-- Row 4 -->
+                <tr class="table-row">
+                    <td class="table-data">
+                        <input class="checkbox" id="check-4" name="cryptbase" type="checkbox"
+                            onclick="changeSelectedAllStatus()" />
+                    </td>
+                    <td class="table-data">cryptbase.dll</td>
+                    <td class="table-data">Martell</td>
+                    <td class="table-data">\Device\HarddiskVolume1\Windows\System32\cryptbase.dll</td>
+                    <td class="table-data dot"></td>
+                    <td class="table-data" name="status">Scheduled</td>
+                </tr>
+                <!-- End Row 4 -->
+                <!-- Row 5 -->
+                <tr class="table-row">
+                    <td class="table-data">
+                        <input class="checkbox" id="check-5" name="7za" type="checkbox"
+                            onclick="changeSelectedAllStatus()" />
+                    </td>
+                    <td class="table-data">7za.exe</td>
+                    <td class="table-data">Baratheon</td>
+                    <td class="table-data">\Device\HarddiskVolume1\temp\7za.exe</td>
+                    <td class="table-data dot"></td>
+                    <td class="table-data" name="status">Scheduled</td>
+                </tr>
+                <!-- End Row 5 -->
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
