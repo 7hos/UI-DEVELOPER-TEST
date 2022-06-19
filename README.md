@@ -42,3 +42,4 @@ This component displays a list of files which can be downloaded. It should be ab
 { name: '7za.exe', device: 'Baratheon', path: '\\Device\\HarddiskVolume1\\temp\\7za.exe', status: 'scheduled' }
 
 ]
+![image001](https://user-images.githubusercontent.com/57401673/174489951-e2227ec7-fa10-45ff-9f3c-3627056b8ca5.png)
