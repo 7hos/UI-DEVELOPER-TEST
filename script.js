@@ -9,6 +9,10 @@ const downloadAvailable = () => {
         return checkbox.checked && status.innerHTML === "Available"
     })
 
+    /*
+    [9]· Clicking "Download Selected" when some or all items are displayed should generate an alert box with the path and device of all selected files.
+    */
+
     const results = selectedCheckbox.map(checkbox => {
         const childrenOfCheckbox = checkbox.parentNode.parentNode.children;
         const devicePathInfo = {}
@@ -54,6 +58,7 @@ const changeSelectedAllStatus = () => {
 }
 
 /*[6]· Clicking the select-all checkbox should select all items if none or some are selected.
+
 [7]· Clicking the select-all checkbox should de-select all items if all are currently selected.
 */
 
